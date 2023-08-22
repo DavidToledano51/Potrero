@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página con imagen de fondo fijo y menú superior</title>
+  <style>
+    
+    body {
+      margin: 0;
+      padding: 0;
+      background-image: url(fondoo.jpg);
+      background-size: cover;
+      background-attachment: fixed;
+      font-family: Arial, sans-serif;
+    }
+
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      background-color: rgba(0, 0, 0, 0.7);
+      padding: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 1;
+    }
+
+    .logo img {
+      width: 50px; /* Ajusta el tamaño del logo según tu diseño */
+      height: auto;
+    }
+
+    .menu {
+      list-style: none;
+      display: flex;
+      margin: 0;
+      padding: 0;
+    }
+
+    .menu-item {
+      margin-right: 20px;
+    }
+
+    .sub-menu {
+      display: none;
+      position: absolute;
+      background-color: rgba(0, 0, 0, 0.9);
+      padding: 10px;
+    }
+
+    .menu-item:hover .sub-menu {
+      display: block;
+    }
+
+    a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    .sub-menu a {
+      display: block;
+      color: #fff;
+      text-decoration: none;
+      padding: 5px;
+    }
+    .social-menu {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+      position: fixed;
+      bottom: 20px;
+      left: 0;
+      right: 0;
+    }
+    .content {
+      max-width: 800px;
+      margin: 100px auto;
+      padding: 20px;
+      background-color: rgba(255, 255, 255, 0.8);
+    }
+
+    .reloj {
+      margin-bottom: 20px;
+    }
+
+    .reloj img {
+      max-width: 40%; /* Ajusta el tamaño de las imágenes de los relojes */
+      display: block;
+      margin: 0 auto;
+    }
+
+    /* Estilo para centrar el título */
+    .content h1 {
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="logo.png" alt="Logo de la empresa">
+    </div>
+    <nav>
+      <ul class="menu">
+        <li class="menu-item"><a href="file:///C:/Users/UTN/Desktop/reloj%20html/index.html">Inicio</a></li>
+        <li class="menu-item"><a href="file:///C:/Users/UTN/Desktop/reloj%20html/Modelos.html">Modelos</a></li>
+        <li class="menu-item"><a href="file:///C:/Users/UTN/Desktop/reloj%20html/Contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section class="content">
+    <h1>MODELOS DE RELOJES</h1>
+    <div class="reloj">
+      <h2>Reloj Deportivo</h2>
+      <img src="reloj deportivo.png" alt="Reloj Deportivo">
+      <p>
+        El reloj deportivo es ideal para aquellos que llevan un estilo de vida activo y disfrutan de actividades al aire libre. Tiene funciones específicas para medir el tiempo de entrenamientos, resistencia al agua y un diseño duradero para soportar el uso en diversas condiciones.
+      </p>
+    </div>
+    <div class="reloj">
+      <h2>Reloj Elegante</h2>
+      <img src="reloj elegante.png" alt="Reloj Elegante">
+      <p>
+        El reloj elegante es perfecto para ocasiones formales y eventos especiales. Su diseño sofisticado y materiales de alta calidad lo convierten en un accesorio de lujo que complementará tu atuendo y realzará tu estilo.
+      </p>
+    </div>
+    <div class="reloj">
+      <h2>Reloj Tactil</h2>
+      <img src="reloj tactil.png" alt="Reloj Tactil">
+      <p>
+        【Grande en pantalla, grande en estilo】Sumérgete en la pantalla HD súper grande y colorida de 1.69 pulgadas, y ve todos tus mensajes de texto y llamadas entrantes en una calidad impresionante y amplia. Expresa más de ti mismo con 50 caras de reloj y caras de reloj editables y widgets o personaliza con tus propias fotos. Profundidad de resistencia al agua: 164.0 ft
+      </p>
+    </div>
+
+</html>
+</body>
+
+
+
+
